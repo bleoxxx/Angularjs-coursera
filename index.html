@@ -10,7 +10,7 @@
       .message { font-size: 1.3em; font-weight: bold; }
     </style>
   </head>
-<body ng-app="lunchChecker">
+<body ng-app="myApp">
    <div class="container">
      <h1>Lunch Checker</h1>
 
@@ -20,10 +20,7 @@
              class="form-control">
          </div>
          <div class="form-group" ng-controller="lunchMessage">
-           <button class="btn btn-default" ng-click="ButtonClick()">Check If Too Much</button>
-           <br />
-           <br />
-           <span ng-bind="Message"></span>
+           <button ng-click="clicked()" class="btn btn-default">Check If Too Much</button>
          </div>
          <div class="form-group message">
          </div>

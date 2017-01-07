@@ -8,5 +8,5 @@ var app = angular.module('myApp',[]);
             return "Please enter data first , Enjoy! , Too Much!";
             };
       };
-     }]);
+     });
 })();

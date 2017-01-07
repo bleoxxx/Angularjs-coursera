@@ -10,7 +10,7 @@
       .message { font-size: 1.3em; font-weight: bold; }
     </style>
   </head>
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="lunchMessage">
    <div class="container">
      <h1>Lunch Checker</h1>
 
@@ -19,9 +19,9 @@
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control">
          </div>
-         <div class="form-group" ng-controller="lunchMessage">
+         <div class="form-group">
            <button ng-click="ButtonClick()" class="btn btn-default">Check If Too Much</button>
-           {{message}}
+           <span ng-bind="Message"></span>
          </div>
          <div class="form-group message">
            {{message}}

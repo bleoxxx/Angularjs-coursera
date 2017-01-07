@@ -9,9 +9,25 @@
     <style>
       .message { font-size: 1.3em; font-weight: bold; }
     </style>
-  <div ng-app="MyApp" ng-controller="MyController">
-      <input type="button" value="Click Me!" ng-click="ButtonClick()" />
-      <br />
-      <br />
-      <span ng-bind="Message"></span>
-  </div>
+  </head>
+<body ng-app="lunchChecker">
+   <div class="container">
+     <h1>Lunch Checker</h1>
+
+         <div class="form-group">
+             <input id="lunch-menu" type="text"
+             placeholder="list comma separated dishes you usually have for lunch"
+             class="form-control">
+         </div>
+         <div class="form-group" ng-controller="lunchMessage">
+           <button class="btn btn-default" ng-click="ButtonClick()">Check If Too Much</button>
+           <br />
+           <br />
+           <span ng-bind="Message"></span>
+         </div>
+         <div class="form-group message">
+         </div>
+   </div>
+
+</body>
+</html>

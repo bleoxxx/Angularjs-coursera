@@ -3,11 +3,10 @@
 
 angular.module('lunchChecker', [])
 
-.controller('lunchMessage', function ($scope) {
-  $scope.eatMessage = "Yaakov";
-  $scope.sayHello = function () {
-    return "Hello Coursera Hellooooo!";
-  };
+.controller('lunchMessage', function($scope) {
+    $scope.clickMe= function(){
+         alert("hi there");
+   }
 });
 
 })();

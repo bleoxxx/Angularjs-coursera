@@ -1,10 +1,10 @@
 (function () {
 'use strict';
 
-var VLogin = angular.module('myApp',[]);
-      VLogin.controller('lunchMessage', ['$scope',function($scope) {
-        $scope.clicked = function(){
-    alert("Clicked");
-}
-}]);
+var app = angular.module('myApp',[]);
+      app.controller('lunchMessage', function ($scope) {
+       $scope.ButtonClick = function () {
+            $scope.Message = "Please enter data first , Enjoy! , Too Much!"
+      }
+     }]);
 })();

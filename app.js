@@ -1,11 +1,6 @@
-(function () {
-'use strict';
-
-var app = angular.module('lunchChecker', [])
-    app.controller('lunchMessage', function ($scope) {
+var app = angular.module('MyApp', [])
+    app.controller('MyController', function ($scope) {
        $scope.ButtonClick = function () {
             $scope.Message = "Button clicked."
         }
     });
-
-})();

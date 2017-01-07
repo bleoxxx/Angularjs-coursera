@@ -19,13 +19,13 @@
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control">
          </div>
-         <div class="form-group" ng-app="lunchMessage">
-            <div ng-click="clickMe()">
-              <button class="btn btn-default">Check If Too Much</button>
-             </div>
+         <div class="form-group" ng-controller="lunchMessage">
+           <button class="btn btn-default" ng-click="ButtonClick()">Check If Too Much</button>
+           <br />
+           <br />
+           <span ng-bind="Message"></span>
          </div>
          <div class="form-group message">
-           hola
          </div>
    </div>
 

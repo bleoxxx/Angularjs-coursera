@@ -1,12 +1,11 @@
 (function () {
 'use strict';
 
-angular.module('lunchChecker', [])
-
-.controller('lunchMessage', function($scope) {
-    $scope.clickMe= function(){
-         alert("hi there");
-   }
-});
+var app = angular.module('lunchChecker', [])
+    app.controller('lunchMessage', function ($scope) {
+       $scope.ButtonClick = function () {
+            $scope.Message = "Button clicked."
+        }
+    });
 
 })();

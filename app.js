@@ -1,7 +1,7 @@
 (function () {
 'use strict';
 
-angular.module('myFirstApp', [])
+angular.module('First', [])
 
 .controller('MyFirstController', function ($scope) {
   $scope.name = "Yaakov";

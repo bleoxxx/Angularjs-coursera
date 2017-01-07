@@ -1,10 +1,10 @@
 (function () {
 'use strict';
 
-angular.module('First', [])
+angular.module('lunchChecker', [])
 
-.controller('MyFirstController', function ($scope) {
-  $scope.name = "Yaakov";
+.controller('lunchMessage', function ($scope) {
+  $scope.eatMessage = "Yaakov";
   $scope.sayHello = function () {
     return "Hello Coursera Hellooooo!";
   };
